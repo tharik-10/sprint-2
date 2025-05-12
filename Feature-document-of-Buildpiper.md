@@ -13,6 +13,16 @@ This document outlines the features, benefits, workflow, and best practices of B
 
 ## Table of Contents
 
+- [Introduction](#introduction)
+- [What is BuildPiper?](#what-is-buildpiper)
+- [Why We Use BuildPiper for CI Orchestration?](#why-we-use-buildpiper-for-ci-orchestration)
+- [Workflow Diagram](#workflow-diagram)
+- [Key Features & Advantages](#key-features--advantages)
+- [Best Practices](#best-practices)
+- [Conclusion](#conclusion)
+- [Contact Information](#contact-information)
+- [References](#references)
+
 ## Introduction 
 BuildPiper is a microservices delivery platform built to help organizations implement end-to-end DevSecOps pipelines. It offers comprehensive features around CI orchestration, empowering teams to automate code integration, quality checks, vulnerability scans, and artifact management seamlessly.
 
@@ -67,7 +77,7 @@ BuildPiper is a powerful CI orchestration tool tailored for modern DevSecOps wor
 |------|------------------------|
 | Mohamed Tharik  | md.tharik.sanaatak@mygurukulam.co    |
 
-## Reference
+## References
 
 | Link                                                                                                         | Description                                      |
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
