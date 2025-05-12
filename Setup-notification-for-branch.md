@@ -1,4 +1,4 @@
-# **Setup Notification for Branch** 
+# **VCS Setup Notification for Branch** 
 
 | Created        | Last updated      | Version         | author|  Internal Reviewer | L0 | L1 | L2|
 |----------------|----------------|-----------------|-----------------|-----|------|----|----|
@@ -31,6 +31,7 @@ VCS tools support branching workflows, but without targeted alerts, critical upd
 ## Step-by-Step Setup Guide
 
 ### Step 1: Identify Target Branches
+- For setting up Notification,I am taking the GitHub tool.
 - Select the branches (e.g., `main`, `dev`, `release`) that need notifications.
 - Note down what type of activity should trigger a notification (e.g., push, PR, tag).
 
