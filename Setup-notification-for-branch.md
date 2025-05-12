@@ -8,6 +8,12 @@
 This document is to guide the setup of branch-specific notifications in a Version Control System (VCS) like GitHub, ensuring teams get real-time alerts for key events (e.g., push or pull request) on branches like `dev`, `main`, or `release`.
 
 ## Table of Contents
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Step-by-Step Setup Guide](#step-by-step-setup-guide)
+- [Conclusion](#conclusion)
+- [Contact Information](#contact-information)
+- [Reference](#reference)
 
 ## Introduction 
 VCS tools support branching workflows, but without targeted alerts, critical updates may be missed. This document outlines how to configure notifications for selected branches to improve collaboration and code visibility.
