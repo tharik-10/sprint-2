@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://github.com/user-attachments/assets/6e970719-edf4-4eac-a3f9-a613c880021e" alt="Notification" width="500"/>
+</p>
+
 # **VCS Setup Notification for Branch** 
 
 | Created        | Last updated      | Version         | author|  Internal Reviewer | L0 | L1 | L2|
