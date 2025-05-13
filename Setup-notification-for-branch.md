@@ -4,11 +4,11 @@
 |----------------|----------------|-----------------|-----------------|-----|------|----|----|
 | 2025-05-12  | 2025-05-12   |     Version 1         |  Mohamed Tharik |Priyanshu|Khushi|Mukul Joshi |Piyush Upadhyay|
 
-## Purpose
+## Overview
 This document is to guide the setup of branch-specific notifications in a Version Control System (VCS) like GitHub, ensuring teams get real-time alerts for key events (e.g., push or pull request) on branches like `dev`, `main`, or `release`.
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Step-by-Step Setup Guide](#step-by-step-setup-guide)
 - [Conclusion](#conclusion)
@@ -81,7 +81,7 @@ jobs:
 ```
 This ensures only `tharik` branch events send notifications.
 
-### Step 4.1: Configure GitHub Secrets
+### Step 5: Configure GitHub Secrets
 
 To securely store your Slack Webhook URL:
 
@@ -95,7 +95,7 @@ To securely store your Slack Webhook URL:
 
 > Use `${{ secrets.YOUR_SECRET_NAME }}` to reference it in your GitHub Actions workflow.
 
-### Step 5: Test & Demonstrate
+### Step 6: Test & Demonstrate
 - Push code to the configured branch
 - Verify notification appears in the target channel/tool
 - Validate the branch filter is respected
