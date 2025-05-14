@@ -12,3 +12,13 @@
 - [Reference](#reference)
 
 ## Introduction
+
+## Contact Information
+| Name | Email address         |
+|------|------------------------|
+| Mohamed Tharik  | md.tharik.sanaatak@mygurukulam.co    |
+
+## Reference
+
+| Link                                                                                                         | Description                                                       |
+|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
