@@ -10,6 +10,15 @@
 
 ## Table of Contents
 
+- [Introduction](#introduction)  
+- [What is Commit Signoff?](#what-is-commit-signoff)  
+- [Why is Commit Signoff Important?](#why-is-commit-signoff-important)  
+- [Commit Signoff Workflow in CI](#commit-signoff-workflow-in-ci)  
+- [Advantages](#advantages)  
+- [Conclusion](#conclusion)  
+- [Contact Information](#contact-information)  
+- [Reference](#reference)  
+
 ## Introduction 
 In modern CI/CD workflows, it's important to ensure that every code change is traceable and legally compliant. Commit Signoff is a lightweight method that adds accountability by requiring contributors to certify their changes with a simple signoff line in the commit message.
 
