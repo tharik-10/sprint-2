@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://github.com/user-attachments/assets/07a5740b-25d8-4e58-a4ef-13954059b505" alt="Github" width="500"/>
+</p>
+
 # **Setup VCS**
 
 | Created        | Last updated      | Version         | author|  Internal Reviewer | L0 | L1 | L2|
