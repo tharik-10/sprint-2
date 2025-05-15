@@ -35,7 +35,8 @@ This document provides a step-by-step guide to setting up a Version Control Syst
 ## A. SaaS (GitHub) Setup
 
 ### Step 1. Create a GitHub Account  
-   Visit [github.com/join](https://github.com/join), fill in username, email, password, and verify your email.
+Visit [github.com/join](https://github.com/join), fill in username, email, password, and verify your email.
+![github](https://github.com/user-attachments/assets/d80d76e1-7b0b-45a4-844a-2c6b41885db7)
 
 ### Step 2. Create a GitHub Organization  
    Go to [https://github.com/organizations/new](https://github.com/organizations/new)  
