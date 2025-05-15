@@ -10,6 +10,18 @@
 | 2025-05-15  | 2025-05-15   |     Version 1         |  Mohamed Tharik |Priyanshu|Khushi|Mukul Joshi |Piyush Upadhyay|
 
 ## Table of Contents 
+1. [Introduction](#introduction)
+2. [Prerequisites](#prerequisites)
+3. [POC Steps - Bugs Analysis in Java CI](#poc-steps---bugs-analysis-in-java-ci)
+   - [Step 1: Sample Project Setup](#step-1-sample-project-setup)
+   - [Step 2: Jenkins Freestyle Job Configuration](#step-2-jenkins-freestyle-job-configuration)
+   - [Step 3: Integrate SonarQube in Jenkins](#step-3-integrate-sonarqube-in-jenkins)
+   - [Step 4: Sample Jenkinsfile](#step-4-sample-jenkinsfile)
+   - [Step 5: View Reports](#step-5-view-reports)
+4. [Benefits](#benefits)
+5. [Conclusion](#conclusion)
+6. [Contact Information](#contact-information)
+7. [References](#references)
 
 ## Introduction 
 This POC demonstrates a Java CI pipeline using Jenkins integrated with static analysis tools like SonarQube and SpotBugs. It automates bug detection and code quality checks to help developers find and fix issues early, improving the overall reliability of the application.For to know more about SonarQube you can refer to this [Document](https://github.com/Cloud-NInja-snaatak/Documentation/blob/shubham_scrum56/commonstack/sonarqube/Documentation.md) you will get clarity of SonarQube.
@@ -95,7 +107,7 @@ SonarQube provides **in-depth static code analysis**, supports multiple language
 |------|------------------------|
 | Mohamed Tharik  | md.tharik.sanaatak@mygurukulam.co    |
 
-## Reference
+## References
 
 | Link                                                                                                         | Description                                                       |
 |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
