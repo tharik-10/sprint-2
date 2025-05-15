@@ -11,6 +11,19 @@
 
 ## Table of Contents 
 
+1. [Introduction](#introduction)  
+2. [What is Bug Analysis in Java CI?](#what-is-bug-analysis-in-java-ci)  
+3. [Why Java CI with Bug Analysis?](#why-java-ci-with-bug-analysis)  
+4. [CI Workflow Diagram for Bug Analysis](#ci-workflow-diagram-for-bug-analysis)  
+5. [Tools for Java Bug Analysis](#tools-for-java-bug-analysis)  
+6. [Tool Comparison for Bug Analysis](#tool-comparison-for-bug-analaysis)  
+7. [Advantages of Integrating Bug Analysis in CI](#advantages-of-integrating-bug-analysis-in-ci)  
+8. [Best Practices](#best-practices)  
+9. [Recommendation](#recommendation)  
+10. [Conclusion](#conclusion)  
+11. [Contact Information](#contact-information)  
+12. [Reference](#reference)  
+
 ## Introduction 
 In the modern software development lifecycle, Continuous Integration (CI) plays a pivotal role in ensuring code quality, faster release cycles, and early detection of issues. For Java-based applications, integrating CI with bug analysis tools is essential for delivering robust and scalable software solutions.
 
