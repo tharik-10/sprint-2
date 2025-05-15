@@ -40,21 +40,25 @@ Visit [github.com/join](https://github.com/join), fill in username, email, passw
 
 ### Step 2. Create a GitHub Organization  
    Go to [https://github.com/organizations/new](https://github.com/organizations/new)  
-   Choose a plan (Free is fine for most teams).  
+   Choose a plan (Free is fine for most teams). 
+![github2](https://github.com/user-attachments/assets/fad7ca35-0cbf-421f-b9f2-3dfb7b143a7b)
    Enter:  
    - Organization name (e.g., `team-devops`)  
    - Email address for communication.  
    Complete setup and optionally invite team members.
+![github3](https://github.com/user-attachments/assets/6767c230-25d2-47ef-8529-4620259b905c)
 
 ### Step 3. Manage Organization  
    Navigate to **Your Organizations** > Select your Organization.  
    - To add members: Go to **People** tab → **Invite Member**.  
    - To create teams: Go to **Teams** → **New Team** → Define name, access, and add members.  
    Teams help manage repository access more easily.
+![github4](https://github.com/user-attachments/assets/3588c99b-51a7-46f8-8da8-e374866032b9)
 
 ### Step 4. Create a Repository in the Organization  
    Go to Organization → **Repositories** → Click **New**.  
    Enter repository name, choose visibility (public/private), initialize with README.
+![github5](https://github.com/user-attachments/assets/7d8b48b2-8d0f-431d-89af-6823fed30511)
 
 ### Step 5. Clone Repository Locally
 ```bash
@@ -73,6 +77,7 @@ git push origin main
 - Click Settings → Collaborators
 - Click Add People
 - Enter the GitHub username → Set access level
+![github6](https://github.com/user-attachments/assets/a7771421-e7ae-49dd-a5b5-74c5cbe660d4)
 
 ## B. Local (GitLab CE) Setup – On-Prem
 
