@@ -111,6 +111,7 @@ services:
       - ./logs:/var/log/gitlab
       - ./data:/var/opt/gitlab
 ```
+- Start and run your multi-container Docker application in detached mode
 ```bash
 docker-compose up -d
 ```
