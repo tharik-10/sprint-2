@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git 'https://github.com/opstree/java-sample-app.git'
+        git ' https://github.com/jenkins-docs/simple-java-maven-app'
       }
     }
     stage('Build') {
