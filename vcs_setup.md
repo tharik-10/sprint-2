@@ -4,7 +4,7 @@
 
 | Created        | Last updated      | Version         | author|  Internal Reviewer | L0 | L1 | L2|
 |----------------|----------------|-----------------|-----------------|-----|------|----|----|
-| 2025-05-14  | 2025-05-15   |     Version 1         |  Mohamed Tharik |Priyanshu|Khushi|Mukul Joshi |Piyush Upadhyay|
+| 2025-05-14  | 2025-05-16   |     Version 1         |  Mohamed Tharik |Priyanshu|Khushi|Mukul Joshi |Piyush Upadhyay|
 
 ## Table of Contents
 
@@ -82,6 +82,7 @@ git push origin main
 ## B. Local (GitLab CE) Setup – On-Prem
 
 ### Step 1. Launch an Ubuntu Server (Cloud/VM/Bare Metal)
+![gitlab](https://github.com/user-attachments/assets/32fc40a2-733e-4c63-a6c3-d5565be94618)
 
 ### Step 2. Install Docker & Docker Compose
 ```bash
@@ -90,6 +91,8 @@ sudo apt install docker.io docker-compose -y
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
+![gitlab2](https://github.com/user-attachments/assets/222b0cbf-4449-4468-9f53-64cba93bf69c)
+
 ### Step 3. Run GitLab CE with Docker
 ```bash
 # docker-compose.yml
@@ -115,10 +118,22 @@ services:
 ```bash
 docker-compose up -d
 ```
+![gitlab5](https://github.com/user-attachments/assets/194f9d02-f054-4bfa-89a6-4a2d5b7c4654)
+
 ### Step 4. Access GitLab
 - Open browser: http://your-server-ip
+
+![gitlab3](https://github.com/user-attachments/assets/3501eabc-5c94-4b4e-8f8f-b6f186c6d0c9)
+
 - Set root password on first login
+
+![gitlab4](https://github.com/user-attachments/assets/9abb0014-a34b-4ce1-9ed2-69f86848a02a)
+
 - Create users and projects
+![gitlab7](https://github.com/user-attachments/assets/a60ce8dd-407b-461d-91f6-1e12b8c0c06c)
+
+![Screenshot-67](https://github.com/user-attachments/assets/533fb822-f6fb-4095-940b-4aa78e6114c9)
+
 ### Step 5. Clone GitLab Repo and Push Code
 ```bash
 git clone http://<your-server-ip>/<username>/<repo>.git
@@ -126,6 +141,9 @@ cd <repo>
 echo "Hello GitLab!" > file.txt
 git add . && git commit -m "Initial commit" && git push origin main
 ```
+
+![gitlab8](https://github.com/user-attachments/assets/e2aaf505-a023-47a4-b8ec-0fc9a2275122)
+
 ## SaaS vs. On-Premise Version Control
 This table outlines the key differences between using a SaaS-based version control system like GitHub and a self-hosted (on-premise) solution like GitLab CE. It helps evaluate based on infrastructure, cost, customization, and control.
 
