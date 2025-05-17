@@ -3,7 +3,7 @@
 # **POC of Dependency Scanning for Python CI Checks**
 | Created        | Last updated      | Version         | author|  Internal Reviewer | L0 | L1 | L2|
 |----------------|----------------|-----------------|-----------------|-----|------|----|----|
-| 2025-05-16  | 2025-05-16   |     Version 1         |  Mohamed Tharik |Priyanshu|Khushi|Mukul Joshi |Piyush Upadhyay|
+| 2025-05-16  | 2025-05-17   |     Version 1         |  Mohamed Tharik |Priyanshu|Khushi|Mukul Joshi |Piyush Upadhyay|
 
 ## Table of Contents
 
@@ -50,7 +50,8 @@ snyk --version
 ### Step 3: Create a Jenkins Pipeline Job
 1. Go to **Jenkins → New Item**
 2. Choose **"Pipeline"**, name it e.g., `python-ci-snyk-scan`, click OK.
-3. Under **Pipeline Definition**, choose **"Pipeline script"** and paste the Jenkinsfile (see next step).
+3. Under **Pipeline Definition**, choose **"Pipeline script from SCM"** and paste the Jenkinsfile (see next step).
+4. Add the `SCM` as `Git` and add the Project repository and Branch.
 
 ### Step 4: Jenkinsfile with Snyk Integration
 Use this **Declarative Jenkinsfile** that:
