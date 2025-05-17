@@ -21,16 +21,18 @@ pipeline {
       steps {
         dir('attendance-api') {
           sh '''
+            #!/bin/bash
             python3 -m venv venv
-            source venv/bin/activate
+            . venv/bin/activate
             pip install -r requirements.txt
             pip install flake8 pytest coverage snyk
           '''
         }
         dir('notification-worker') {
           sh '''
+            #!/bin/bash
             python3 -m venv venv
-            source venv/bin/activate
+            . venv/bin/activate
             pip install -r requirements.txt
             pip install flake8 pytest coverage snyk
           '''
