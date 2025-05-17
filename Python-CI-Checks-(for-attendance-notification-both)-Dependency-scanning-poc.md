@@ -83,18 +83,19 @@ pipeline {
       steps {
         dir('attendance-api') {
           sh '''
+            #!/bin/bash
             python3 -m venv venv
-            source venv/bin/activate
-            pip install -r requirements.txt
-            pip install flake8 pytest coverage snyk
+            . venv/bin/activate
+            pip install poetry
+            poetry install
           '''
         }
         dir('notification-worker') {
           sh '''
+            #!/bin/bash
             python3 -m venv venv
-            source venv/bin/activate
+            . venv/bin/activate
             pip install -r requirements.txt
-            pip install flake8 pytest coverage snyk
           '''
         }
       }
@@ -136,10 +137,10 @@ pipeline {
 
   post {
     success {
-      slackSend(channel: '#ci-status', message: "✅ CI Passed: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
+      slackSend(channel: '#general', message: "✅ CI Passed: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
     }
     failure {
-      slackSend(channel: '#ci-status', message: "❌ CI Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
+      slackSend(channel: '#general', message: "❌ CI Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
     }
   }
 }
