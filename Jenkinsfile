@@ -43,14 +43,14 @@ pipeline {
       steps {
         dir('attendance-api') {
           sh '''
-            source venv/bin/activate
+            . venv/bin/activate
             pip install flake8
             flake8 .
           '''
         }
         dir('notification-worker') {
           sh '''
-            source venv/bin/activate
+            . venv/bin/activate
             pip install flake8
             flake8 .
           '''
@@ -62,14 +62,14 @@ pipeline {
       steps {
         dir('attendance-api') {
           sh '''
-            source venv/bin/activate
+            . venv/bin/activate
             pip install pytest pytest-cov
             pytest --cov=. --cov-report=xml
           '''
         }
         dir('notification-worker') {
           sh '''
-            source venv/bin/activate
+            . venv/bin/activate
             pip install pytest pytest-cov
             pytest --cov=. --cov-report=xml
           '''
@@ -81,14 +81,14 @@ pipeline {
       steps {
         dir('attendance-api') {
           sh '''
-            source venv/bin/activate
+            . venv/bin/activate
             pip install -r requirements.txt
             snyk test --file=requirements.txt
           '''
         }
         dir('notification-worker') {
           sh '''
-            source venv/bin/activate
+            . venv/bin/activate
             pip install -r requirements.txt
             snyk test --file=requirements.txt
           '''
