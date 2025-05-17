@@ -21,18 +21,18 @@ pipeline {
       steps {
         dir('attendance-api') {
           sh '''
-            #!/bin/bash
             python3 -m venv venv
-            . venv/bin/activate
+            source venv/bin/activate
+            pip install --upgrade pip
             pip install poetry
             poetry install
           '''
         }
         dir('notification-worker') {
           sh '''
-            #!/bin/bash
             python3 -m venv venv
-            . venv/bin/activate
+            source venv/bin/activate
+            pip install --upgrade pip
             pip install -r requirements.txt
           '''
         }
@@ -42,10 +42,18 @@ pipeline {
     stage('Lint Check') {
       steps {
         dir('attendance-api') {
-          sh 'source venv/bin/activate && flake8 .'
+          sh '''
+            source venv/bin/activate
+            pip install flake8
+            flake8 .
+          '''
         }
         dir('notification-worker') {
-          sh 'source venv/bin/activate && flake8 .'
+          sh '''
+            source venv/bin/activate
+            pip install flake8
+            flake8 .
+          '''
         }
       }
     }
@@ -53,10 +61,18 @@ pipeline {
     stage('Test & Coverage') {
       steps {
         dir('attendance-api') {
-          sh 'source venv/bin/activate && pytest --cov=. --cov-report=xml'
+          sh '''
+            source venv/bin/activate
+            pip install pytest pytest-cov
+            pytest --cov=. --cov-report=xml
+          '''
         }
         dir('notification-worker') {
-          sh 'source venv/bin/activate && pytest --cov=. --cov-report=xml'
+          sh '''
+            source venv/bin/activate
+            pip install pytest pytest-cov
+            pytest --cov=. --cov-report=xml
+          '''
         }
       }
     }
@@ -64,10 +80,18 @@ pipeline {
     stage('Snyk Vulnerability Scan') {
       steps {
         dir('attendance-api') {
-          sh 'source venv/bin/activate && snyk test --file=requirements.txt'
+          sh '''
+            source venv/bin/activate
+            pip install -r requirements.txt
+            snyk test --file=requirements.txt
+          '''
         }
         dir('notification-worker') {
-          sh 'source venv/bin/activate && snyk test --file=requirements.txt'
+          sh '''
+            source venv/bin/activate
+            pip install -r requirements.txt
+            snyk test --file=requirements.txt
+          '''
         }
       }
     }
